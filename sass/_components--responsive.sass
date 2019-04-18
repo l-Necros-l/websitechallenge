@@ -1,0 +1,77 @@
+$web_01: 1444px
+$web_02: 1080px
+$mobile_01: 986px
+$mobile_02: 820px
+
+
+@media screen and (max-width: $web_01)
+  .section__showcase
+    .showcase__grid-container
+      margin: 0 0 20vh 0
+  .section__reviews
+    .reviews__grid-container
+      .flex__item
+        margin: 0 0.4em
+  .section__call2action
+    .action
+      grid-template-columns: 4fr 3fr
+    .call2action__txt
+      max-width: 100%
+
+
+@media screen and (max-width: $web_02)
+  .section__call2action
+    .action
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .call2action__textbox
+      height: 3.4em
+      width: 100%
+      margin-bottom: 1em
+    .call2action__button
+      width: 100%
+
+@media screen and (max-width: $mobile_01)
+  .section__reviews
+    .reviews__grid-container
+      flex-direction: column
+      justify-content: center
+      align-content: center
+      align-items: center
+      .flex__item
+        margin: 1em 0
+    .reviews__quote
+      top: 28px
+      left: 120px
+
+@media screen and (max-width: $mobile_02)
+  .container
+    width: 96%
+    margin: auto
+  .section__showcase
+    .showcase__bottom
+      max-width: 100%
+      flex-direction: column
+      text-align: center
+      .content
+        max-width: 100%
+        h1
+          max-width: 100%
+          margin: auto
+      .showcase__bottom__img
+        margin: auto
+  .section__call2action
+    max-width: 100vw
+  footer
+    text-align: center
+    .footer__logo
+      position: relative
+      right: 40px
+  .footer__grid-container
+    flex-direction: column
+    .footer__item
+      margin-top: 2em
+  ul
+    li
+      padding-bottom: 0.4em
